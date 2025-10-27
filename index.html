@@ -9,7 +9,14 @@
 <body>
     <!-- Background to stop propagation-->
      <div id="background"> Background area (clicks here for console)</div>    
-        
+        <form id="feedback-form" novalidate>
+            <h2>Feedback Form</h2>
+            <label for="name">Name*</label>
+            <input type="text" id="name" data-tip="Enter your name." required>
+            <div class="row">
+                <small class="char-count" data-for="name">0 / 50</small>
+                <small class="error" data-for="name"></small>
+            </div>
 
 </body>
 </html>
